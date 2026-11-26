@@ -1,0 +1,35 @@
+/* Sky Courier: Ridge Run — presentation only. No game logic here. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; background: #0b0e16; overflow: hidden; }
+body { font-family: "Segoe UI", system-ui, sans-serif; color: #e8ecf2; }
+#wrap { position: relative; width: 100vw; height: 100vh; }
+#game { display: block; width: 100%; height: 100%; touch-action: none; cursor: crosshair; }
+#missions {
+  position: absolute; top: 118px; left: 12px; display: flex; flex-direction: column; gap: 6px;
+}
+#missions button {
+  background: rgba(10, 14, 22, 0.65); color: #c8cede; border: 1px solid #3a3f52;
+  padding: 6px 12px; font-size: 13px; font-weight: 600; border-radius: 6px; cursor: pointer;
+  text-align: left;
+}
+#missions button:hover { color: #fff; border-color: #f5d76e; }
+#missions button.active { background: rgba(245, 215, 110, 0.2); color: #ffd94d; border-color: #f5d76e; }
+#overlay {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center;
+  background: rgba(8, 12, 24, 0.55); padding: 24px;
+}
+#overlay.hidden { display: none; }
+#overlay h1 {
+  font-size: 44px; letter-spacing: 3px; color: #ffd94d;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.7); margin-bottom: 14px;
+}
+#overlay p { max-width: 620px; font-size: 17px; line-height: 1.55; color: #f0f2f6;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); }
+#overlay-hint { margin-top: 12px; font-size: 13px; color: #c8cede; }
+#start-btn {
+  margin-top: 26px; padding: 14px 44px; font-size: 20px; font-weight: 800; letter-spacing: 2px;
+  color: #1b1e26; background: #ffd94d; border: none; border-radius: 8px; cursor: pointer;
+  box-shadow: 0 4px 24px rgba(255, 217, 77, 0.45);
+}
+#start-btn:hover { background: #ffe27a; }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Sky Courier: Ridge Run — a flight game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="missions">
+    <button data-mission="rings" class="active">1 · Ring Run</button>
+    <button data-mission="landing">2 · Landing Challenge</button>
+  </div>
+  <div id="overlay" class="hidden">
+    <h1 id="overlay-title">SKY COURIER · RIDGE RUN</h1>
+    <p id="overlay-text"></p>
+    <p id="overlay-hint"></p>
+    <button id="start-btn">FLY</button>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
